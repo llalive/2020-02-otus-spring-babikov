@@ -1,0 +1,9 @@
+spring:
+  #data:
+   # mongodb:
+    #  uri: mongodb://localhost
+     # database: todo
+      #port: 27017
+logging:
+  level:
+    ROOT: ERROR
