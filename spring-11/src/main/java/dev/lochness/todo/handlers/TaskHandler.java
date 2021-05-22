@@ -1,11 +1,10 @@
 package dev.lochness.todo.handlers;
 
-import dev.lochness.todo.domain.Task;
-import reactor.core.publisher.Flux;
+import org.springframework.web.reactive.function.server.ServerResponse;
 import reactor.core.publisher.Mono;
 
 public interface TaskHandler {
-    Flux<Task> list(String userId);
+    Mono<ServerResponse> list(String userId);
 
-    Mono<Task> details(String userId, String taskId);
+    Mono<ServerResponse> details(String userId, String taskId);
 }

@@ -14,7 +14,7 @@ public class TaskDto {
 
     private User user;
 
-    public static TaskDto from(Task task){
+    public static TaskDto from(Task task) {
         return TaskDto.builder()
                 .id(task.getId())
                 .name(task.getName())

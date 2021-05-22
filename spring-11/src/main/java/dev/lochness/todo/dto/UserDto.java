@@ -22,7 +22,7 @@ public class UserDto {
                 .id(user.getId())
                 .username(user.getUsername())
                 .email(user.getEmail())
-                .tasks(new ArrayList<>(user.getTasks()))
+                .tasks(user.getTasks())
                 .build();
     }
 }

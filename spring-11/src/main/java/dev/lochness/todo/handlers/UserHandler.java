@@ -1,11 +1,10 @@
 package dev.lochness.todo.handlers;
 
-import dev.lochness.todo.domain.User;
-import reactor.core.publisher.Flux;
+import org.springframework.web.reactive.function.server.ServerResponse;
 import reactor.core.publisher.Mono;
 
 public interface UserHandler {
-    Flux<User> list();
+    Mono<ServerResponse> list();
 
-    Mono<User> details(String userId);
+    Mono<ServerResponse> details(String userId);
 }
