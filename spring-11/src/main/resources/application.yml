@@ -1,0 +1,7 @@
+spring:
+  data:
+    mongodb:
+      database: todo
+logging:
+  level:
+    ROOT: INFO
